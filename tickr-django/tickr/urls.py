@@ -16,9 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from tickr.views import index
+from tickr.views import go, index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('go/', go),
     path('', index),
 ]
